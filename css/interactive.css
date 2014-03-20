@@ -1,0 +1,380 @@
+/*
+Fonts
+*/
+
+@font-face {
+	font-family: Frank;
+	src: url(../font/Frank-Regular.otf);
+}
+@font-face {
+	font-family: Frank-Italic;
+	src: url(../font/Frank-Italic.otf);
+}
+@font-face {
+	font-family: Frank-Bold;
+	src: url(../font/Frank-Bold.otf);
+}
+@font-face {
+	font-family: Frank-BoldItalic;
+	src: url(../font/Frank-BoldItalic.otf);
+}
+@font-face {
+	font-family: Frank-Light;
+	src: url(../font/Frank-Light.otf);
+}
+@font-face {
+	font-family: Frank-LightItalic;
+	src: url(../font/Frank-LightItalic.otf);
+}
+@font-face {
+	font-family: Frank-Medium;
+	src: url(../font/Frank-Medium.otf);
+}
+@font-face {
+	font-family: Frank-MediumItalic;
+	src: url(../font/Frank-MediumItalic.otf);
+}
+@font-face {
+	font-family: Frank-Thin;
+	src: url(../font/Frank-Thin.otf);
+}
+@font-face {
+	font-family: Frank-ThinItalic;
+	src: url(../font/Frank-ThinItalic.otf);
+}
+
+/*
+Color Palette
+*/
+
+/* white */
+.w {
+	color: #ffffff;
+}
+/* off-white */
+.ow {
+	color: #e5e5e5;
+}
+/* blue1 */
+.b1 {
+	color: #ccd6e2;
+}
+/* blue2 */
+.b2 {
+	color: #99adc5;
+}
+/* blue3 */
+.b3 {
+	color: #6684a8;
+}
+/* blue4 */
+.b4 {
+	color: #335b8b;
+}
+/* blue5 */
+.b5 {
+	color: #00326e;
+}
+/* red */
+.r {
+	color: #983222;
+}
+/* yellow */
+.y {
+	color: #fdc82f;
+}
+/* bg1 */
+.bg1 {
+	background-color: #ccd6e2;
+}
+/* bg2 */
+.bg2 {
+	background-color: #99adc5;
+}
+/* bg3 */
+.bg3 {
+	background-color: #6684a8;
+}
+/* bg4 */
+.bg4 {
+	background-color: #335b8b;
+}
+/* bg5 */
+.bg5 {
+	background-color: #00326e;
+}
+
+/*
+ Core Styles
+ */
+
+html {
+	background-color: rgba(124, 242, 141, .7);
+}
+#interactiveWrapper {
+	position: relative;
+	width: 660px;
+	height: 828px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 1);
+	font-family: Frank;
+}
+
+/*
+Header Styles
+*/
+
+#header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 624px;
+	height: 40px;
+	margin: 0 18px;
+	font-size: 16px;
+}
+#header .left {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 121px;
+	height: 24px;
+	padding: 12px 0 4px 0;
+	display: inline-block;
+}
+#header .middle {
+	position: absolute;
+	top: 0px;
+	left: 121px;
+	width: 407px;
+	height: 24px;
+	padding: 12px 0 4px 0;
+	display: inline-block;
+}
+#header .middle img {
+	position: absolute;
+	top: 0px;
+	padding: 8px 0 0 0;
+}
+#header .right {
+	position: absolute;
+	top: 0px;
+	left: 528px;
+	width: 96px;
+	height: 24px;
+	padding: 12px 0 4px 0;
+	display: block;
+}
+
+/*
+Menu Styles
+*/
+
+#menu {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	width: 660px;
+	height: 42px;
+}
+#menu .nav {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 660px;
+	height: 40px;
+	font-size: 0px;
+}
+#menu .nav .button {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 131px;
+	height: 28px;
+	padding: 12px 0 0 0;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	cursor: pointer;
+}
+#menu .nav .button:first-child {
+	border-left: none;
+}
+#menu .nav .button:nth-child(1).selected {
+	border-bottom: 1px solid #ccd6e2;
+}
+#menu .nav .button:nth-child(2).selected {
+	border-bottom: 1px solid #99adc5;
+}
+#menu .nav .button:nth-child(3).selected {
+	border-bottom: 1px solid #6684a8;
+}
+#menu .nav .button:nth-child(4).selected {
+	border-bottom: 1px solid #335b8b;
+}
+#menu .nav .button:nth-child(5).selected {
+	border-bottom: 1px solid #00326e;
+}
+
+/*
+Dials Styles
+*/
+
+#dials {
+	position: absolute;
+	top: 81px;
+	left: 0px;
+	width: 660px;
+	height: 280px;
+}
+#dials .scenario {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 620px;
+	height: 42px;
+	padding: 24px 20px 0 20px;
+	border-bottom: 1px solid #ffffff;
+}
+#dials .head {
+	position: absolute;
+	top: 67px;
+	left: 0px;
+	width: 624px;
+	height: 24px;
+	padding: 12px 0;
+	margin: 0 18px;
+	font-family: Frank-Light;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+#dials .regions {
+	position: absolute;
+	top: 111px;
+	left: 0px;
+	width: 632px;
+	height: 154px;
+	padding: 8px 0;
+	margin: 0 14px;
+}
+#dials .regions .region {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 135px;
+	height: inherit;
+	padding: 0 10px;
+	display: inline-block;
+	font-size: 0px;
+	text-align: center;
+}
+#dials .regions .region .dial {
+	position: relative;
+	width: 135px;
+	height: 93px;
+}
+#dials .regions .region .dial .percent {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 53px;
+	height: 21px;
+	margin: 35px 41px;
+	padding: 2px 0 0 0;
+	font-size: 16px;
+	text-align: center;
+}
+#dials .regions .region .lead {
+	position: absolute;
+	top: 93px;
+	left: 0px;
+	width: 155px;
+	height: 28px;
+	padding: 12px 0 0 0;
+	font-size: 12px;
+	text-align: center;
+}
+#dials .regions .region .copy {
+	position: absolute;
+	top: 133px;
+	left: 0px;
+	width: 155px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*
+Map Styles
+*/
+
+#map {
+	position: absolute;
+	top: 362px;
+	left: 0px;
+	width: 660px;
+	height: 350px;
+}
+#map .img1 {
+
+}
+#map .img2 {
+
+}
+#map .img3 {
+
+}
+#map .img4 {
+
+}
+#map .img5 {
+
+}
+
+/*
+Comparison Styles
+*/
+
+#comparison {
+	position: absolute;
+	top: 712px;
+	left: 0px;
+	width: 660px;
+	height: 116px;
+}
+#comparison .country {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 60px;
+	height: 100px;
+	padding: 8px 0;
+	display: inline-block;
+}
+#comparison .country .circle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 60px;
+	height: 60px;
+	display: block;
+}
+#comparison .country .abbr {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 60px;
+	height: 16px;
+	padding: 4px 0 0 0;
+
+}
+#comparison .country .value {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 60px;
+	height: 16px;
+	padding: 4px 0 0 0;
+}
