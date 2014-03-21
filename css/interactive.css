@@ -113,7 +113,7 @@ html {
 }
 #interactiveWrapper {
 	position: relative;
-	width: 660px;
+	width: 645px;
 	height: 828px;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 1);
@@ -128,9 +128,9 @@ Header Styles
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 624px;
+	width: 625px;
 	height: 40px;
-	margin: 0 18px;
+	margin: 0 10px;
 	font-size: 16px;
 }
 #header .left {
@@ -174,14 +174,14 @@ Menu Styles
 	position: absolute;
 	top: 40px;
 	left: 0px;
-	width: 660px;
+	width: 645px;
 	height: 42px;
 }
 #menu .nav {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 660px;
+	width: 645px;
 	height: 40px;
 	font-size: 0px;
 }
@@ -189,7 +189,7 @@ Menu Styles
 	position: relative;
 	top: 0px;
 	left: 0px;
-	width: 131px;
+	width: 128px;
 	height: 28px;
 	padding: 12px 0 0 0;
 	display: inline-block;
@@ -201,6 +201,9 @@ Menu Styles
 }
 #menu .nav .button:first-child {
 	border-left: none;
+}
+#menu .nav .button:last-child {
+	width: 129px;
 }
 #menu .nav .button:nth-child(1).selected {
 	border-bottom: 1px solid #ccd6e2;
@@ -226,14 +229,14 @@ Dials Styles
 	position: absolute;
 	top: 81px;
 	left: 0px;
-	width: 660px;
+	width: 645px;
 	height: 280px;
 }
 #dials .scenario {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 620px;
+	width: 605px;
 	height: 42px;
 	padding: 24px 20px 0 20px;
 	border-bottom: 1px solid #ffffff;
@@ -242,9 +245,9 @@ Dials Styles
 	position: absolute;
 	top: 67px;
 	left: 0px;
-	width: 624px;
+	width: 609px;
 	height: 24px;
-	padding: 12px 0;
+	padding: 8px 0;
 	margin: 0 18px;
 	font-family: Frank-Light;
 	font-size: 20px;
@@ -252,18 +255,18 @@ Dials Styles
 }
 #dials .regions {
 	position: absolute;
-	top: 111px;
+	top: 107px;
 	left: 0px;
-	width: 632px;
-	height: 154px;
-	padding: 8px 0;
+	width: 617px;
+	height: 164px;
+	padding: 4px 0 5px 0;
 	margin: 0 14px;
 }
 #dials .regions .region {
 	position: relative;
 	top: 0px;
 	left: 0px;
-	width: 135px;
+	width: 132px;
 	height: inherit;
 	padding: 0 10px;
 	display: inline-block;
@@ -272,7 +275,7 @@ Dials Styles
 }
 #dials .regions .region .dial {
 	position: relative;
-	width: 135px;
+	width: 132px;
 	height: 93px;
 }
 #dials .regions .region .dial .percent {
@@ -286,19 +289,30 @@ Dials Styles
 	font-size: 16px;
 	text-align: center;
 }
+#dials .regions .region .dial .dialBody {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 93px;
+	height: 93px;
+	margin: 0 20px;
+	background: transparent;
+	cursor: pointer;
+	z-index: 1000;
+}
 #dials .regions .region .lead {
 	position: absolute;
 	top: 93px;
 	left: 0px;
 	width: 155px;
-	height: 28px;
-	padding: 12px 0 0 0;
+	height: 16px;
+	padding: 8px 0 0 0;
 	font-size: 12px;
 	text-align: center;
 }
 #dials .regions .region .copy {
 	position: absolute;
-	top: 133px;
+	top: 116px;
 	left: 0px;
 	width: 155px;
 	height: 20px;
@@ -312,9 +326,9 @@ Map Styles
 
 #map {
 	position: absolute;
-	top: 362px;
+	top: 361px;
 	left: 0px;
-	width: 660px;
+	width: 645px;
 	height: 350px;
 }
 #map .img1 {
@@ -339,42 +353,63 @@ Comparison Styles
 
 #comparison {
 	position: absolute;
-	top: 712px;
+	top: 684px;
 	left: 0px;
-	width: 660px;
-	height: 116px;
+	width: 645px;
+	height: 144px;
+	font-size: 0px;
 }
-#comparison .country {
+#comparison .lead {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 609px;
+	height: 19px;
+	padding: 8px 18px 0 18px;
+	font-size: 14px;
+	border-bottom: 1px solid #00326e;
+}
+#comparison .countries {
+	position: absolute;
+	top: 28px;
+	left: 0px;
+	width: 601px;
+	height: 116px;
+	padding: 0 22px;
+}
+#comparison .countries .country {
 	position: relative;
 	top: 0px;
 	left: 0px;
 	width: 60px;
 	height: 100px;
 	padding: 8px 0;
+	font-size: 12px;
 	display: inline-block;
 }
-#comparison .country .circle {
+#comparison .countries .country .circle {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 60px;
-	height: 60px;
+	height: 68px;
+	padding: 8px 0 0 0;
 	display: block;
 }
-#comparison .country .abbr {
+#comparison .countries .country .abbr {
 	position: absolute;
-	top: 60px;
+	top: 76px;
 	left: 0px;
 	width: 60px;
 	height: 16px;
-	padding: 4px 0 0 0;
-
+	padding: 2px 0 0 0;
+	text-align: center;
 }
-#comparison .country .value {
+#comparison .countries .country .value {
 	position: absolute;
-	top: 80px;
+	top: 92px;
 	left: 0px;
 	width: 60px;
 	height: 16px;
-	padding: 4px 0 0 0;
+	text-align: center;
 }
