@@ -76,7 +76,7 @@ Color Palette
 	color: #00326e;
 }
 /* red */
-.r {
+.r, #CHINA {
 	color: #983222;
 }
 /* yellow */
@@ -154,7 +154,7 @@ Header Styles
 #header .middle img {
 	position: absolute;
 	top: 0px;
-	padding: 8px 0 0 0;
+	padding: 11px 0 0 0;
 }
 #header .right {
 	position: absolute;
@@ -237,9 +237,10 @@ Dials Styles
 	top: 0px;
 	left: 0px;
 	width: 605px;
-	height: 42px;
-	padding: 24px 20px 0 20px;
+	height: 40px;
+	padding: 26px 20px 0 20px;
 	border-bottom: 1px solid #ffffff;
+	font-size: 14px;
 }
 #dials .head {
 	position: absolute;
@@ -284,7 +285,7 @@ Dials Styles
 	left: 0px;
 	width: 53px;
 	height: 21px;
-	margin: 35px 41px;
+	margin: 35px 41px 35px 39px;
 	padding: 2px 0 0 0;
 	font-size: 16px;
 	text-align: center;
@@ -395,6 +396,16 @@ Comparison Styles
 	height: 68px;
 	padding: 8px 0 0 0;
 	display: block;
+}
+#comparison .countries .country .circle img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#comparison .countries .country .circle svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 #comparison .countries .country .abbr {
 	position: absolute;
