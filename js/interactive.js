@@ -461,7 +461,7 @@ Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly
 			};
 			// Calling Arc Transition
 			arc.transition()
-				.duration(1000)
+				.duration(600)
 				.call(arcTween, ((value * 100) * Math.PI/180));
 			//If Callback Function Exists, Execute it
 			typeof callback == 'function' ? callback.apply(this) : void(0);
@@ -474,7 +474,7 @@ Dial Class Public Methods
 
 // Initialize Dial
 Dial.prototype.init = function () {
-	var duration = 500,
+	var duration = 600,
 		endValue = this.value,
 		element = this.element;
 		//Interpolate Arc to Inial Value
@@ -487,7 +487,7 @@ Dial.prototype.init = function () {
 };
 // Update Dial to Data
 Dial.prototype.update = function (value, callback) {
-	var duration = 500,
+	var duration = 600,
 		endValue = value,
 		element = this.element;
 		//Interpolate Arc to New Value
