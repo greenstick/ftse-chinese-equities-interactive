@@ -427,8 +427,8 @@ var Dial = function (args) {
 Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly Break Up The Logic
 */
 
-	// Interpolates Numeric Text
-	dial.interpolateText = function (start, end, duration, callback) {
+	// Interpolates Numeric Text - Accepts Optional Callback
+	dial.interpolateText = function (end, duration, callback) {
 		// var targetValue = Math.round(start) - Math.round(end);
 		d3.select(this.element + ' .percent')
 			.transition()
@@ -441,9 +441,9 @@ Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly
 			};
 		});
 		//If Callback Function Exists, Execute it
-		typeof callback == 'function' ? callback() : false;
+		typeof callback == 'function' ? callback.apply(this) : void(0);
 	};
-	// Interpolates Arc Angle
+	// Interpolates Arc Angle - Accepts Optional Callback
 	dial.interpolateArc = function (value, arc, callback) {
 		var dialBody 	= this.element,
 			dimensions 	= this.arcDimensions,
@@ -464,7 +464,7 @@ Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly
 				.duration(1000)
 				.call(arcTween, ((value * 100) * Math.PI/180));
 			//If Callback Function Exists, Execute it
-			typeof callback == 'function' ? callback() : false;
+			typeof callback == 'function' ? callback.apply(this) : void(0);
 	};
 };
 
@@ -475,13 +475,12 @@ Dial Class Public Methods
 // Initialize Dial
 Dial.prototype.init = function () {
 	var duration = 500,
-		startValue = 0,
 		endValue = this.value,
 		element = this.element;
 		//Interpolate Arc to Inial Value
 		this.interpolateArc(endValue, arc);
 		//Interpolate Text to Init Value From 0
-		this.interpolateText(startValue, endValue, duration, function () {
+		this.interpolateText(endValue, duration, function () {
 			//Sets Final Value to Sought Data Value
 			$(element + ' .percent').text(endValue);
 		});
@@ -490,17 +489,16 @@ Dial.prototype.init = function () {
 Dial.prototype.update = function (value, callback) {
 	var duration = 500,
 		endValue = value,
-		startValue = this.history,
 		element = this.element;
 		//Interpolate Arc to New Value
 		this.interpolateArc(endValue, arc);
 		//Interpolate Text to New Value
-		this.interpolateText(startValue, endValue, duration, function () {
+		this.interpolateText(endValue, duration, function () {
 			//Sets Final Value to Sought Data Value
 			$(element + ' .percent').text(endValue * 100);
 		});
 		//If Callback Function Exists, Execute it
-		typeof callback == 'function' ? callback() : false;
+		typeof callback == 'function' ? callback.apply(this) : void(0);
 };
 
 /*
@@ -544,7 +542,7 @@ Interactive Class Not Actually Private 'Private' Methods -- Really Just Done to 
 			this.history = interactive.data[page].dials[k];
 		});
 		//If Callback Function Exists, Execute it
-		typeof callback == 'function' ? callback() : false;
+		typeof callback == 'function' ? callback.apply(this) : void(0);
 	};
 	// Initialize Rankings
 	interactive._setRanks = function (page) {
@@ -580,7 +578,7 @@ Interactive.prototype.update = function (page, callback) {
 	this._setLead('.scenario', page);
 	this._setColors('.region .lead', '.region .copy' , page)
 	//If Callback Function Exists, Execute it
-	typeof callback == 'function' ? callback() : false;
+	typeof callback == 'function' ? callback.apply(this) : void(0);
 };
 
 /*
