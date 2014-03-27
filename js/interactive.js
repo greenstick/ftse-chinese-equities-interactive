@@ -596,10 +596,10 @@ var interactive = new Interactive(scenarios);
 Event Bindings
 */
 
-// Menu Click Binding 
-$('.button').on('click', function () {
-	var colorData = $(this).data().color;
-	var pageData = $(this).data().scenario;
+// Menu Click Binding - Updates Background-color & Page Data
+$('.button').on('click', function (e) {
+	var colorData = $(this).data().color,
+        pageData = $(this).data().scenario;
 		$('.button').removeClass('selected');
 		$(this).addClass('selected');
 		$('#dials').css('background-color', colorData);
@@ -607,8 +607,10 @@ $('.button').on('click', function () {
 			updating = false;
 		});
 })
-// Dial Click Binding
-$('.dialBody').on('click', function () {
+// Dial Click Binding - Updates Mapped Image and Re-colors Selected Dial
+$('.dial').on('click', function (e) {
 	var mapData = $(this).data().map;
 		$('#map img').attr('src', "img/maps/" + mapData + ".png");
+        d3.selectAll('.dialCenter').attr("class", "dialCenter");
+        d3.select('#' + e.currentTarget.id + ' .dialCenter').attr("class", "dialCenter selected");
 })

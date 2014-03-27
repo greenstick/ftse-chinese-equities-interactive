@@ -287,17 +287,6 @@ Dials Styles
 	width: 132px;
 	height: 93px;
 }
-#dials .regions .region .dial .percent {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 53px;
-	height: 21px;
-	margin: 35px 41px 35px 39px;
-	padding: 2px 0 0 0;
-	font-size: 16px;
-	text-align: center;
-}
 #dials .regions .region .dial .dialBody {
 	position: absolute;
 	top: 0px;
@@ -308,6 +297,23 @@ Dials Styles
 	background: transparent;
 	cursor: pointer;
 	z-index: 1000;
+}
+#dials .regions .region .dial .dialBody svg g .dialCenter {
+	fill: #ffffff;
+}
+#dials .regions .region .dial .dialBody svg g .dialCenter.selected {
+	fill: #fdc82f;
+}
+#dials .regions .region .dial .dialBody .percent {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 53px;
+	height: 21px;
+	margin: 35px 41px 35px 21px;
+	padding: 2px 0 0 0;
+	font-size: 16px;
+	text-align: center;
 }
 #dials .regions .region .lead {
 	position: absolute;
