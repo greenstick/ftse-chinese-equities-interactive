@@ -173,7 +173,7 @@ var scenarios = {
             "nojapan": 0.236
         },
         "colors": {
-        	"head" : "#00326e",
+        	"head" : "#ffffff",
         	"body" : "#ffffff"
         },
         "rankings": [
@@ -435,7 +435,8 @@ Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly
 			.duration(duration)
 			.ease('linear')
 			.tween("text", function () {
-				var i = d3.interpolate(parseInt(this.textContent / 100), end);
+				// var i = d3.interpolate(parseInt(this.textContent / 100), end);
+                var i = d3.interpolate(0, end);
 				return function (t) {
 					this.textContent = ((i(t)) * 100).toFixed(1) + "%";
 			};
@@ -487,7 +488,9 @@ Dial.prototype.init = function () {
 };
 // Update Dial to Data
 Dial.prototype.update = function (value, callback) {
-	var duration = 600,
+	
+
+    var duration = 600,
 		endValue = value,
 		element = this.element;
 		//Interpolate Arc to New Value

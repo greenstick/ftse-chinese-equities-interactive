@@ -122,7 +122,7 @@ body {
 #interactiveWrapper {
 	position: relative;
 	width: 645px;
-	height: 828px;
+	height: 868px;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 1);
 	font-family: Frank;
@@ -238,7 +238,7 @@ Dials Styles
 	top: 81px;
 	left: 0px;
 	width: 645px;
-	height: 280px;
+	height: 240px;
 }
 #dials .scenario {
 	position: absolute;
@@ -267,7 +267,7 @@ Dials Styles
 	top: 107px;
 	left: 0px;
 	width: 617px;
-	height: 164px;
+	height: 125px;
 	padding: 4px 0 5px 0;
 	margin: 0 14px;
 }
@@ -341,7 +341,7 @@ Map Styles
 
 #map {
 	position: absolute;
-	top: 361px;
+	top: 321px;
 	left: 0px;
 	width: 645px;
 	height: 350px;
@@ -353,7 +353,7 @@ Comparison Styles
 
 #comparison {
 	position: absolute;
-	top: 684px;
+	top: 644px;
 	left: 0px;
 	width: 645px;
 	height: 144px;
@@ -386,6 +386,9 @@ Comparison Styles
 	padding: 8px 0;
 	font-size: 12px;
 	display: inline-block;
+}
+#comparison .countries #CHINA {
+	font-family: Frank-Bold;
 }
 #comparison .countries .country .circle {
 	position: absolute;
@@ -431,6 +434,17 @@ Comparison Styles
 	width: 60px;
 	height: 16px;
 	text-align: center;
+}
+
+#footer {
+	position: absolute;
+	top: 810px;
+	width: 645px;
+	height: 50px;
+	font-family: Frank-Light;
+	font-size: 12px;
+	text-align: justify;
+	color: #a8a8a8;
 }
 /*
 Smartphone Styles

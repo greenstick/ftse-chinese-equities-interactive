@@ -49,7 +49,7 @@ Author: Ben Cordier
 									<circle fill="#A0A6C3" cx="46.5" cy="46.5" r="46.5"/>
 									<circle opacity="0.5" fill="#FFFFFF" cx="46.5" cy="46.5" r="45.5" />
 									<circle fill="#A0A6C3" cx="46.5" cy="46.5" r="30"/>
-									<circle class="dialCenter" fill="#FFFFFF" cx="46.5" cy="46.5" r="27"/>
+									<circle class="dialCenter selected" fill="#FFFFFF" cx="46.5" cy="46.5" r="27"/>
 								</g>
 							</svg>
 							<div class="percent r"></div>
@@ -58,10 +58,10 @@ Author: Ben Cordier
 					<div class="lead b5">
 						Global Equities
 					</div>
-					<div class="copy w">
+					<!-- <div class="copy w">
 						As defined by the FTSE<br />
 						Global All Cap Index
-					</div>
+					</div> -->
 				</div>
 				<div class="region">
 					<div id="emerging" class="dial" data-map="emerging">
@@ -80,10 +80,10 @@ Author: Ben Cordier
 					<div class="lead b5">
 						Emerging Markets
 					</div>
-					<div class="copy w">
+					<!-- <div class="copy w">
 						As defined by the FTSE<br />
 						Emerging All Cap Index
-					</div>
+					</div> -->
 				</div>
 				<div class="region">
 					<div id="pacific" class="dial" data-map="pacific">
@@ -102,10 +102,10 @@ Author: Ben Cordier
 					<div class="lead b5">
 						Asia Pacific
 					</div>
-					<div class="copy w">
+					<!-- <div class="copy w">
 						As defined by the FTSE<br />
 						Asia Pacific All Cap Index
-					</div>
+					</div> -->
 				</div>
 				<div class="region">
 					<div id="nojapan" class="dial" data-map="nojapan">
@@ -124,18 +124,18 @@ Author: Ben Cordier
 					<div class="lead b5">
 						Asia Pacific (ex Japan)
 					</div>
-					<div class="copy w">
+					<!-- <div class="copy w">
 						As defined by the FTSE<br />
 						Asia Pacific All Cap Index<br />
 						(excluding Japan)
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
 <!-- Maps -->
 		<div id="map">
 			<!-- Show Default China Map on Init -->
-			<img src="img/maps/china.png">
+			<img src="img/maps/global.png">
 		</div>
 <!-- Country Comparison -->
 		<div id="comparison" class="b5">
@@ -164,6 +164,10 @@ Author: Ben Cordier
 					<div class="value" data-bind="text: formatted"></div>
 				</div>
 			</div>
+		</div>
+<!-- Footer Sources -->
+		<div id="footer">
+			Global Equities, as defined by the FTSE Global All Cap Index. Emerging Markets, as defined by the FTSE Emerging All Cap Index. Asia Pacific, as defined by the FTSE Asia Pacific All Cap Index. Asia Pacific (ex Japan), as defined by the FTSE Asia Pacific All Cap Index (excluding Japan).
 		</div>
 	</div>
 <!-- JS -->
