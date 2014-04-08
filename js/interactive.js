@@ -13,7 +13,7 @@ FTSE Scenarios Data
 var scenarios = {
     "now": {
         "name": "now",
-        "lead": "The $50 billion GFII quota features no foreign A-Share ownership.",
+        "lead": "The $50 billion QFII quota features no foreign A-Share ownership.",
         "dials": {
             "global": 0.02,
             "emerging": 0.194,
@@ -89,7 +89,7 @@ var scenarios = {
     },
     "1": {
         "name": "1",
-        "lead": "The existing $50 billion GFII quota is kept with a 30% foreign A-Share ownership limit.",
+        "lead": "The existing $50 billion QFII quota is kept with a 30% foreign A-Share ownership limit.",
         "dials": {
             "global": 0.022,
             "emerging": 0.205,
