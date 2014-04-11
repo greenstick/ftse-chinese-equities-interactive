@@ -570,7 +570,7 @@ Smartphone Styles
 		top: 49px;
 		left: 0px;
 		width: 224px;
-		height: 50px;
+		height: 74px;
 		padding: 8px 0 0 0;
 		margin: 0 78px 0 18px;
 		font-family: Frank-Light;
@@ -579,10 +579,10 @@ Smartphone Styles
 	}
 	#dials .regions {
 		position: absolute;
-		top: 107px;
+		top: 132px;
 		left: 0px;
 		width: 292px;
-		height: 328px;
+		height: 303px;
 		padding: 8px 0 5px 0;
 		margin: 0 14px;
 	}
@@ -592,7 +592,7 @@ Smartphone Styles
 		left: 0px;
 		width: 132px;
 		height: 164px;
-		padding: 0 4px;
+		padding: 8px 4px 0 4px;
 		display: inline-block;
 		font-size: 0px;
 		text-align: center;
