@@ -14,26 +14,26 @@ Fonts
 	font-family: Frank;
 	src: url(../font/Frank-Regular.otf);
 }
-@font-face {
+/*@font-face {
 	font-family: Frank-Italic;
 	src: url(../font/Frank-Italic.otf);
-}
+}*/
 @font-face {
 	font-family: Frank-Bold;
 	src: url(../font/Frank-Bold.otf);
 }
-@font-face {
+/*@font-face {
 	font-family: Frank-BoldItalic;
 	src: url(../font/Frank-BoldItalic.otf);
-}
+}*/
 @font-face {
 	font-family: Frank-Light;
 	src: url(../font/Frank-Light.otf);
 }
-@font-face {
+/*@font-face {
 	font-family: Frank-LightItalic;
 	src: url(../font/Frank-LightItalic.otf);
-}
+}*/
 @font-face {
 	font-family: Frank-Medium;
 	src: url(../font/Frank-Medium.otf);
