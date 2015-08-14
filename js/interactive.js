@@ -439,8 +439,8 @@ Dial Class Not Actually Private 'Private' Methods -- Really Just Done to Cleanly
                 var i = d3.interpolate(0, end);
 				return function (t) {
 					this.textContent = ((i(t)) * 100).toFixed(1) + "%";
-			};
-		});
+                };
+            });
 		//If Callback Function Exists, Execute it
 		typeof callback == 'function' ? callback.apply(this) : void(0);
 	};
@@ -572,14 +572,14 @@ Interactive.prototype.init = function (page) {
 	this._updateDials(page);
 	this._setRanks(page);
 	this._setLead('.scenario', page);
-	this._setColors('.region .lead', '.region .copy' , page)
+	this._setColors('.region .lead', '.region .copy' , page);
 };
 // Update Interactive - Updates to Specified Page
 Interactive.prototype.update = function (page, callback) {
 	this._updateDials(page);
 	this._setRanks(page);
 	this._setLead('.scenario', page);
-	this._setColors('.region .lead', '.region .copy' , page)
+	this._setColors('.region .lead', '.region .copy' , page);
 	//If Callback Function Exists, Execute it
 	typeof callback == 'function' ? callback.apply(this) : void(0);
 };
