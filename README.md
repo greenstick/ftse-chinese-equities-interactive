@@ -4,7 +4,7 @@
 
 ## Overview
 
-I developed this project while working at Column Five Media in 2014 for our client, FTSE. The purpose of the interactive infographic was to educate investors on the pending liberalization of the Chinese equities market (circa 2014). A part of this project I really enjoyed was coding up the interactive dials from scratch. These simple widgets look great and have a clean animation that brings additional visual interest to the user and helps while conveying the changed scenario.
+I developed this project while working at [Column Five Media](https://www.columnfivemedia.com) in 2014 for our client, FTSE. The purpose of the interactive infographic was to educate investors on the pending liberalization of the Chinese equities market (circa 2014). A part of this project I really enjoyed was coding up the interactive dials from scratch. These simple widgets look great and have a clean animation that brings additional visual interest to the user and helps while conveying the changed scenario.
 
 ## How it Works
 
